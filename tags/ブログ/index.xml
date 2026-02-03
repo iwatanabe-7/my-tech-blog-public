@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ブログ on IW Tech Blog</title>
-    <link>http://localhost:1313/tags/%E3%83%96%E3%83%AD%E3%82%B0/</link>
+    <link>https://iwatanabe-7.com/tags/%E3%83%96%E3%83%AD%E3%82%B0/</link>
     <description>Recent content in ブログ on IW Tech Blog</description>
     <generator>Hugo</generator>
     <language>ja-jp</language>
     <lastBuildDate>Mon, 03 Nov 2025 17:16:56 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/%E3%83%96%E3%83%AD%E3%82%B0/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://iwatanabe-7.com/tags/%E3%83%96%E3%83%AD%E3%82%B0/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>【合格体験記】学生が3週間でITパスポート試験に合格！</title>
-      <link>http://localhost:1313/posts/itpassport/</link>
+      <link>https://iwatanabe-7.com/posts/itpassport/</link>
       <pubDate>Mon, 03 Nov 2025 17:16:56 +0900</pubDate>
-      <guid>http://localhost:1313/posts/itpassport/</guid>
+      <guid>https://iwatanabe-7.com/posts/itpassport/</guid>
       <description>「ITパスポート」を取得したので、&lt;!-- raw HTML omitted --&gt;&#xA;勉強方法を備忘録として書いておきます。</description>
     </item>
     <item>
       <title>自己紹介</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
+      <link>https://iwatanabe-7.com/posts/my-first-post/</link>
       <pubDate>Tue, 15 Jul 2025 20:58:15 +0900</pubDate>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <guid>https://iwatanabe-7.com/posts/my-first-post/</guid>
       <description>&lt;p&gt;初めまして、新卒でバックエンドエンジニアとして働いています。&lt;br&gt;&#xA;AWSを勉強しており CLF SAA を取得しました。&lt;/p&gt;&#xA;&lt;p&gt;日々の業務で学んだことや作っているサービスについて書いていきます。&lt;/p&gt;&#xA;</description>
     </item>
   </channel>
