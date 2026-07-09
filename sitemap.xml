@@ -2,39 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://iwatanabe-7.com/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2026-07-08T20:00:00+09:00</lastmod>
   </url><url>
-    <loc>https://iwatanabe-7.com/sitemap/</loc>
+    <loc>http://localhost:1313/sitemap/</loc>
     <lastmod>2026-07-08T20:00:00+09:00</lastmod>
   </url><url>
-    <loc>https://iwatanabe-7.com/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2026-07-07T20:05:22+09:00</lastmod>
   </url><url>
-    <loc>https://iwatanabe-7.com/posts/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2026-07-07T20:05:22+09:00</lastmod>
   </url><url>
-    <loc>https://iwatanabe-7.com/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-07-07T20:05:22+09:00</lastmod>
   </url><url>
-    <loc>https://iwatanabe-7.com/categories/%E6%8A%80%E8%A1%93/</loc>
+    <loc>http://localhost:1313/categories/%E6%8A%80%E8%A1%93/</loc>
     <lastmod>2026-07-07T20:05:22+09:00</lastmod>
   </url><url>
-    <loc>https://iwatanabe-7.com/tags/%E6%8A%80%E8%A1%93%E3%83%96%E3%83%AD%E3%82%B0/</loc>
+    <loc>http://localhost:1313/posts/tech-blog/</loc>
     <lastmod>2026-07-07T20:05:22+09:00</lastmod>
   </url><url>
-    <loc>https://iwatanabe-7.com/posts/tech-blog/about-my-tech-blog/</loc>
+    <loc>http://localhost:1313/tags/%E6%8A%80%E8%A1%93%E3%83%96%E3%83%AD%E3%82%B0/</loc>
     <lastmod>2026-07-07T20:05:22+09:00</lastmod>
   </url><url>
-    <loc>https://iwatanabe-7.com/posts/skill/itpassport/</loc>
+    <loc>http://localhost:1313/posts/tech-blog/about-my-tech-blog/</loc>
+    <lastmod>2026-07-07T20:05:22+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/skill/itpassport/</loc>
     <lastmod>2025-11-03T17:16:56+09:00</lastmod>
   </url><url>
-    <loc>https://iwatanabe-7.com/tags/%E3%83%96%E3%83%AD%E3%82%B0/</loc>
+    <loc>http://localhost:1313/tags/%E3%83%96%E3%83%AD%E3%82%B0/</loc>
     <lastmod>2025-11-03T17:16:56+09:00</lastmod>
   </url><url>
-    <loc>https://iwatanabe-7.com/posts/profile/my-first-post/</loc>
+    <loc>http://localhost:1313/posts/skill/</loc>
+    <lastmod>2025-11-03T17:16:56+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/profile/</loc>
     <lastmod>2025-07-15T20:58:15+09:00</lastmod>
   </url><url>
-    <loc>https://iwatanabe-7.com/series/</loc>
+    <loc>http://localhost:1313/posts/profile/my-first-post/</loc>
+    <lastmod>2025-07-15T20:58:15+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/series/</loc>
   </url>
 </urlset>

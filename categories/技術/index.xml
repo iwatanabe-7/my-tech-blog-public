@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>技術 on IW Tech Blog</title>
-    <link>https://iwatanabe-7.com/categories/%E6%8A%80%E8%A1%93/</link>
+    <link>http://localhost:1313/categories/%E6%8A%80%E8%A1%93/</link>
     <description>Recent content in 技術 on IW Tech Blog</description>
     <generator>Hugo</generator>
     <language>ja-jp</language>
     <lastBuildDate>Tue, 07 Jul 2026 20:05:22 +0900</lastBuildDate>
-    <atom:link href="https://iwatanabe-7.com/categories/%E6%8A%80%E8%A1%93/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/%E6%8A%80%E8%A1%93/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>技術ブログを開設しました</title>
-      <link>https://iwatanabe-7.com/posts/tech-blog/about-my-tech-blog/</link>
+      <link>http://localhost:1313/posts/tech-blog/about-my-tech-blog/</link>
       <pubDate>Tue, 07 Jul 2026 20:05:22 +0900</pubDate>
-      <guid>https://iwatanabe-7.com/posts/tech-blog/about-my-tech-blog/</guid>
+      <guid>http://localhost:1313/posts/tech-blog/about-my-tech-blog/</guid>
       <description>本技術ブログを始めた理由や技術構成について書きました。</description>
     </item>
     <item>
       <title>【合格体験記】学生が3週間でITパスポート試験に合格</title>
-      <link>https://iwatanabe-7.com/posts/skill/itpassport/</link>
+      <link>http://localhost:1313/posts/skill/itpassport/</link>
       <pubDate>Mon, 03 Nov 2025 17:16:56 +0900</pubDate>
-      <guid>https://iwatanabe-7.com/posts/skill/itpassport/</guid>
+      <guid>http://localhost:1313/posts/skill/itpassport/</guid>
       <description>「ITパスポート」を取得しました。&lt;br&gt;&#xA;勉強方法を備忘録として書いておきます。</description>
     </item>
     <item>
       <title>自己紹介</title>
-      <link>https://iwatanabe-7.com/posts/profile/my-first-post/</link>
+      <link>http://localhost:1313/posts/profile/my-first-post/</link>
       <pubDate>Tue, 15 Jul 2025 20:58:15 +0900</pubDate>
-      <guid>https://iwatanabe-7.com/posts/profile/my-first-post/</guid>
+      <guid>http://localhost:1313/posts/profile/my-first-post/</guid>
       <description>初めまして、ナベです。&lt;br&gt;&#xA;新卒でバックエンドエンジニアとして働いています。日々の業務で学んだことや作っているサービスについて書いていきます。</description>
     </item>
   </channel>
