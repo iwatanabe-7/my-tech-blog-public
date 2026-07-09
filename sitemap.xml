@@ -2,16 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://iwatanabe-7.com/posts/itpassport/</loc>
+    <loc>https://iwatanabe-7.com/</loc>
+    <lastmod>2026-07-08T20:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://iwatanabe-7.com/sitemap/</loc>
+    <lastmod>2026-07-08T20:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://iwatanabe-7.com/posts/</loc>
+    <lastmod>2026-07-07T20:05:22+09:00</lastmod>
+  </url><url>
+    <loc>https://iwatanabe-7.com/posts/skill/itpassport/</loc>
     <lastmod>2025-11-03T17:16:56+09:00</lastmod>
   </url><url>
     <loc>https://iwatanabe-7.com/categories/</loc>
-    <lastmod>2025-11-03T17:16:56+09:00</lastmod>
-  </url><url>
-    <loc>https://iwatanabe-7.com/</loc>
-    <lastmod>2025-11-03T17:16:56+09:00</lastmod>
-  </url><url>
-    <loc>https://iwatanabe-7.com/posts/</loc>
     <lastmod>2025-11-03T17:16:56+09:00</lastmod>
   </url><url>
     <loc>https://iwatanabe-7.com/tags/</loc>
@@ -23,7 +26,9 @@
     <loc>https://iwatanabe-7.com/categories/%E6%8A%80%E8%A1%93/</loc>
     <lastmod>2025-11-03T17:16:56+09:00</lastmod>
   </url><url>
-    <loc>https://iwatanabe-7.com/posts/my-first-post/</loc>
+    <loc>https://iwatanabe-7.com/posts/profile/my-first-post/</loc>
     <lastmod>2025-07-15T20:58:15+09:00</lastmod>
+  </url><url>
+    <loc>https://iwatanabe-7.com/series/</loc>
   </url>
 </urlset>

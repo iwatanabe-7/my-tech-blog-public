@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>資格 on IW Tech Blog</title>
+    <link>http://localhost:1313/posts/skill/</link>
+    <description>Recent content in 資格 on IW Tech Blog</description>
+    <generator>Hugo</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Mon, 03 Nov 2025 17:16:56 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/skill/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【合格体験記】学生が3週間でITパスポート試験に合格</title>
+      <link>http://localhost:1313/posts/skill/itpassport/</link>
+      <pubDate>Mon, 03 Nov 2025 17:16:56 +0900</pubDate>
+      <guid>http://localhost:1313/posts/skill/itpassport/</guid>
+      <description>「ITパスポート」を取得しました。&lt;br&gt;&#xA;勉強方法を備忘録として書いておきます。</description>
+    </item>
+  </channel>
+</rss>

@@ -6,21 +6,7 @@
     <description>Recent content in Posts on IW Tech Blog</description>
     <generator>Hugo</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Mon, 03 Nov 2025 17:16:56 +0900</lastBuildDate>
+    <lastBuildDate></lastBuildDate>
     <atom:link href="https://iwatanabe-7.com/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>【合格体験記】学生が3週間でITパスポート試験に合格</title>
-      <link>https://iwatanabe-7.com/posts/itpassport/</link>
-      <pubDate>Mon, 03 Nov 2025 17:16:56 +0900</pubDate>
-      <guid>https://iwatanabe-7.com/posts/itpassport/</guid>
-      <description>「ITパスポート」を取得しました。&lt;br&gt;&#xA;勉強方法を備忘録として書いておきます。</description>
-    </item>
-    <item>
-      <title>自己紹介</title>
-      <link>https://iwatanabe-7.com/posts/my-first-post/</link>
-      <pubDate>Tue, 15 Jul 2025 20:58:15 +0900</pubDate>
-      <guid>https://iwatanabe-7.com/posts/my-first-post/</guid>
-      <description>初めまして、ナベです。&lt;br&gt;&#xA;新卒でバックエンドエンジニアとして働いています。日々の業務で学んだことや作っているサービスについて書いていきます。</description>
-    </item>
   </channel>
 </rss>

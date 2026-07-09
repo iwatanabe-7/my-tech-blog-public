@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>技術ブログ on IW Tech Blog</title>
+    <link>http://localhost:1313/posts/techblog/</link>
+    <description>Recent content in 技術ブログ on IW Tech Blog</description>
+    <generator>Hugo</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Tue, 07 Jul 2026 20:05:22 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/techblog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>技術ブログを開設しました</title>
+      <link>http://localhost:1313/posts/techblog/about-my-tech-blog/</link>
+      <pubDate>Tue, 07 Jul 2026 20:05:22 +0900</pubDate>
+      <guid>http://localhost:1313/posts/techblog/about-my-tech-blog/</guid>
+      <description>本技術ブログを始めた理由や技術構成について書きました。</description>
+    </item>
+  </channel>
+</rss>
