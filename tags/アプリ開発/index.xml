@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>アプリ開発 on IW Tech Blog</title>
+    <link>https://iwatanabe-7.com/tags/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/</link>
+    <description>Recent content in アプリ開発 on IW Tech Blog</description>
+    <generator>Hugo</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sun, 19 Jul 2026 18:00:15 +0900</lastBuildDate>
+    <atom:link href="https://iwatanabe-7.com/tags/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【Claude】ClaudeでLPを爆速作成！GemShareのランディングページを公開しました</title>
+      <link>https://iwatanabe-7.com/posts/app-dev/gemshare/gemshare-lp/</link>
+      <pubDate>Sun, 19 Jul 2026 18:00:15 +0900</pubDate>
+      <guid>https://iwatanabe-7.com/posts/app-dev/gemshare/gemshare-lp/</guid>
+      <description>Claude でアプリ「GemShare」のLPを作成してみました。</description>
+    </item>
+  </channel>
+</rss>
