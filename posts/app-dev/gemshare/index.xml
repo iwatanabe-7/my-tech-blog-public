@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>GemShare on IW Tech Blog</title>
+    <title>GemShare on Nabe Tech Blog</title>
     <link>http://localhost:1313/posts/app-dev/gemshare/</link>
-    <description>Recent content in GemShare on IW Tech Blog</description>
+    <description>Recent content in GemShare on Nabe Tech Blog</description>
     <generator>Hugo</generator>
     <language>ja-jp</language>
     <lastBuildDate>Sun, 19 Jul 2026 18:00:15 +0900</lastBuildDate>
