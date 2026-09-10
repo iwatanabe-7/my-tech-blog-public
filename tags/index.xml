@@ -6,8 +6,29 @@
     <description>Recent content in Tags on Nabe Tech Blog</description>
     <generator>Hugo</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 19 Jul 2026 18:00:15 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 10 Sep 2026 18:00:15 +0900</lastBuildDate>
     <atom:link href="https://iwatanabe-7.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LINE</title>
+      <link>https://iwatanabe-7.com/tags/line/</link>
+      <pubDate>Thu, 10 Sep 2026 18:00:15 +0900</pubDate>
+      <guid>https://iwatanabe-7.com/tags/line/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>作ってみた系</title>
+      <link>https://iwatanabe-7.com/tags/%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F%E7%B3%BB/</link>
+      <pubDate>Thu, 10 Sep 2026 18:00:15 +0900</pubDate>
+      <guid>https://iwatanabe-7.com/tags/%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F%E7%B3%BB/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>自動化</title>
+      <link>https://iwatanabe-7.com/tags/%E8%87%AA%E5%8B%95%E5%8C%96/</link>
+      <pubDate>Thu, 10 Sep 2026 18:00:15 +0900</pubDate>
+      <guid>https://iwatanabe-7.com/tags/%E8%87%AA%E5%8B%95%E5%8C%96/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Claude</title>
       <link>https://iwatanabe-7.com/tags/claude/</link>

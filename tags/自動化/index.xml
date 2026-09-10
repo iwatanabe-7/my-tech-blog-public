@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>自動化 on Nabe Tech Blog</title>
+    <link>https://iwatanabe-7.com/tags/%E8%87%AA%E5%8B%95%E5%8C%96/</link>
+    <description>Recent content in 自動化 on Nabe Tech Blog</description>
+    <generator>Hugo</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Thu, 10 Sep 2026 18:00:15 +0900</lastBuildDate>
+    <atom:link href="https://iwatanabe-7.com/tags/%E8%87%AA%E5%8B%95%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【自動化】「今から帰ります」をワンタップで家族LINEに送る仕組みを作ってみた</title>
+      <link>https://iwatanabe-7.com/posts/lifehack/line-one-tap-message/</link>
+      <pubDate>Thu, 10 Sep 2026 18:00:15 +0900</pubDate>
+      <guid>https://iwatanabe-7.com/posts/lifehack/line-one-tap-message/</guid>
+      <description>iPhoneショートカットで「今から帰ります」を家族LINEに送る仕組みを作ってみた</description>
+    </item>
+  </channel>
+</rss>

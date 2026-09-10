@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ja-jp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>【自動化】「今から帰ります」をワンタップで家族LINEに送る仕組みを作ってみた | Nabe Tech Blog</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="iPhoneショートカットで「今から帰ります」を家族LINEに送る仕組みを作ってみた">
+    <meta name="generator" content="Hugo 0.148.1">
+    
+    
+    
+      <meta name="robots" content="index, follow">
+    
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.f8083f2fb1788f3d42f1e3ac44a66434e02493606e6a16e15d28f90b5d096bb7.css" >
+
+
+
+  
+
+
+    
+
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="https://iwatanabe-7.com/posts/lifehack/line-one-tap-message/">
+    
+
+    <meta property="og:url" content="https://iwatanabe-7.com/posts/lifehack/line-one-tap-message/">
+  <meta property="og:site_name" content="Nabe Tech Blog">
+  <meta property="og:title" content="【自動化】「今から帰ります」をワンタップで家族LINEに送る仕組みを作ってみた">
+  <meta property="og:description" content="iPhoneショートカットで「今から帰ります」を家族LINEに送る仕組みを作ってみた">
+  <meta property="og:locale" content="ja_jp">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-09-10T18:00:15+09:00">
+    <meta property="article:modified_time" content="2026-09-10T18:00:15+09:00">
+    <meta property="article:tag" content="LINE">
+    <meta property="article:tag" content="作ってみた系">
+    <meta property="article:tag" content="自動化">
+
+  <meta itemprop="name" content="【自動化】「今から帰ります」をワンタップで家族LINEに送る仕組みを作ってみた">
+  <meta itemprop="description" content="iPhoneショートカットで「今から帰ります」を家族LINEに送る仕組みを作ってみた">
+  <meta itemprop="datePublished" content="2026-09-10T18:00:15+09:00">
+  <meta itemprop="dateModified" content="2026-09-10T18:00:15+09:00">
+  <meta itemprop="wordCount" content="100">
+  <meta itemprop="keywords" content="LINE,作ってみた系,自動化">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="【自動化】「今から帰ります」をワンタップで家族LINEに送る仕組みを作ってみた">
+  <meta name="twitter:description" content="iPhoneショートカットで「今から帰ります」を家族LINEに送る仕組みを作ってみた">
+
+      
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-37KY05FRQG"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-37KY05FRQG');
+        }
+      </script>
+    
+	
+  </head><body class="ma0 avenir bg-near-white production">
+
+    
+   
+  
+
+  
+  
+  
+  <header class="cover bg-center" style="background-image: url('https://iwatanabe-7.com/images/lifehack/line-one-tap-message/line-one-tap-message.png');">
+    <div class="bg-black-60">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        Nabe Tech Blog
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/posts/profile/my-first-post/" title="about page">
+              about
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="https://github.com/iwatanabe-7" title="Github page">
+              Github
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/" title="Posts page">
+              Posts
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/tags/" title="Tags page">
+              Tags
+            </a>
+          </li>
+          
+        </ul>
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+          <div class="f2 f1-l fw2 white-90 mb0 lh-title">【自動化】「今から帰ります」をワンタップで家族LINEに送る仕組みを作ってみた</div>
+          
+            <div class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
+              iPhoneショートカットで「今から帰ります」を家族LINEに送る仕組みを作ってみた
+            </div>
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  
+  <article class="flex-l mw8 center ph3 flex-wrap justify-between bg-white">
+    <header class="pt3 w-100">
+      <aside class=" instapaper_ignoref b helvetica tracked ttu">
+          
+        ライフハック
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="athelas mt3 mb1">【自動化】「今から帰ります」をワンタップで家族LINEに送る仕組みを作ってみた</h1>
+      
+      
+      
+      <time class="f6 mv2 dib tracked" datetime="2026-09-10T18:00:15+09:00">2026年9月10日</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f5 nested-links black pr4-l w-100"><p><img src="/images/lifehack/line-one-tap-message/line-one-tap-message.png" alt="サムネ"></p>
+<h2 id="はじめに">はじめに</h2>
+<p>仕事終わりや外出先から帰宅するとき、毎回家族に「今から帰ります」と連絡しています。<br>
+ただ、この連絡は毎日のように行うため、以下のような操作を繰り返すことに少し面倒さを感じていました。</p>
+<ol>
+<li>LINEを開く</li>
+<li>家族とのトークを開く</li>
+<li>「今から帰ります」と入力する</li>
+<li>送信する</li>
+</ol>
+<p>地味に面倒です。</p>
+<p>そこで今回は、iPhoneの「ショートカット」アプリを使って、<strong>「帰る」ボタンを押すだけで、家族に「今から帰ります」と送信できる仕組み</strong>を作ってみました。</p>
+<p>最終的には、</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>「帰る」ボタンを押す
+</span></span><span style="display:flex;"><span>        ↓
+</span></span><span style="display:flex;"><span>確認ダイアログを表示
+</span></span><span style="display:flex;"><span>        ↓
+</span></span><span style="display:flex;"><span>「送信」を押す
+</span></span><span style="display:flex;"><span>        ↓
+</span></span><span style="display:flex;"><span>LINEで「今から帰ります」をグループLINEに送信
+</span></span></code></pre></div><p>という流れを実現できました。</p>
+<p>今回は、このショートカットを作る過程と、実際に検証して分かったことをまとめます。</p>
+<h2 id="この記事で作るもの">この記事で作るもの</h2>
+<p>今回は、家族に一言メッセージを送るiPhoneの「ショートカット」を作ります。</p>
+<p>今回作るショートカットの仕組みは、以下の通りです。</p>
+<ul>
+<li>
+<p>「今から帰ります」 というメッセージをワンタップで送信</p>
+</li>
+<li>
+<p>ホーム画面に配置した「帰る」アイコンを押すだけでOK</p>
+</li>
+<li>
+<p>ボタンを押したあとに「送信しますか？」という確認画面が出るので、押し間違えてもキャンセルできる</p>
+</li>
+</ul>
+<h2 id="なぜショートカットで自動化するのか">なぜショートカットで自動化するのか</h2>
+<p>「今から帰ります」のようなメッセージは、毎日同じ文章を送ります。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>LINEを開く
+</span></span><span style="display:flex;"><span>↓
+</span></span><span style="display:flex;"><span>家族のトークを探す
+</span></span><span style="display:flex;"><span>↓
+</span></span><span style="display:flex;"><span>メッセージを入力する
+</span></span><span style="display:flex;"><span>↓
+</span></span><span style="display:flex;"><span>送信する
+</span></span></code></pre></div><p>という操作をする必要があります。
+1回だけなら大した手間ではありません。
+しかし、何度も繰り返す操作であれば、LINEを開かずにワンタップで送信できた方が便利です。</p>
+<p>そこで今回は、iPhoneに標準搭載されている「ショートカット」を使うことにしました。
+ショートカットを使えば、複数の操作を一つにまとめて実行できます。</p>
+<h2 id="最終的な構成">最終的な構成</h2>
+<p>最終的に作成した構成はシンプルです。</p>
+<p>「帰る」ボタン → 確認ダイアログ →「送信」→ LINE送信（「今から帰る」）</p>
+<p>ポイントは、<strong>送信前に確認処理を入れていること</strong>です。</p>
+<p>「帰る」ボタンを押した瞬間にLINEが送信される構成にもできますが、誤操作が少し怖いので、今回はワンクッション置くことにしました。</p>
+<h2 id="作成手順">作成手順</h2>
+<h3 id="まずは帰るボタンを作る">まずは「帰る」ボタンを作る</h3>
+<p><img src="/images/lifehack/line-one-tap-message/app-image.png" alt="app-image"></p>
+<p><a href="https://apps.apple.com/jp/app/ショートカット/id915249334" target="_blank" rel="noopener noreferrer">iPhone のショートカットアプリ(画像左のアプリ)</a> を開き、新しいショートカットを作成します。
+今回作成したショートカットには、分かりやすいように、<strong>「今から帰ります」</strong>
+という名前を付けました。</p>
+<p>このショートカットをホーム画面などに配置しておけば、ホーム画面からすぐ実行できます(ホーム画面に配置する方法は<a href="https://support.apple.com/ja-jp/guide/shortcuts/apd735880972/ios" target="_blank" rel="noopener noreferrer">公式のホームページ</a>をご覧ください)</p>
+<h3 id="lineへの送信処理を追加する">LINEへの送信処理を追加する</h3>
+<p>次に、ショートカットからLINEへメッセージを送信する処理を追加します。
+実施に設定したショートカットは以下です。
+<img src="/images/lifehack/line-one-tap-message/shortcut.png" alt=""></p>
+<p>毎回入力する必要がないように、ショートカット側で送信するメッセージを固定します。<br>
+これによって、実行するたびに文章を入力する必要がなくなります。</p>
+<p>さらに送信先も家族に固定することで、毎回トークを探す必要もなくなります。</p>
+<p>ここで、もう一つ工夫を入れました。それが<strong>確認ダイアログ</strong>です。「帰る」ボタンを押したら、いきなりLINEを送信するのではなく、 <strong>「送信しますか？」</strong> と確認を一回挟むようにしています。</p>
+<p>そして、<strong>送信</strong>を選択した場合だけ、LINEの送信処理を実行します。</p>
+<p><img src="/images/lifehack/line-one-tap-message/send.png" alt=""></p>
+<p>これなら、間違えて「帰る」ボタンを押してしまっても、すぐにメッセージが送信されることはありません。</p>
+<p>今回の用途では、この確認ステップを入れておくのが良いと感じました。</p>
+<h2 id="実際に送信してみる">実際に送信してみる</h2>
+<p>ここまで設定できたので、実際にショートカットを実行してみました。<br>
+「帰る」をタップすると、確認ダイアログが表示されます。
+続けて「送信」をタップすると、LINE側で送信処理が実行され、メッセージを家族に送信できました。最初に想定していた</p>
+<p>帰るボタンを押す→確認→送信</p>
+<p>という流れを実現することができました。</p>
+<p>これだけでも、毎回LINEを開いて文章を入力する手間がなくなります。</p>
+<h2 id="問題点パスコードロックをoffにする必要がある">問題点：パスコードロックをOFFにする必要がある</h2>
+<p>今回の方法には、一つ大きな注意点があります。
+それは、<strong>LINEのパスコードロックをOFFにする必要がある</strong>
+ということです。
+ショートカットを使うことで、LINEを開いてトークを探し、メッセージを入力する手間を減らせる一方で、今回の環境ではLINEのパスコードロックを有効にすると送信できませんでした(「不明なエラーが起きました」と出てしまいます。)。</p>
+<p>これはセキュリティ面でも無視できない問題です。<br>
+そのため、「便利だからパスコードロックをOFFにして使う」と単純に考えるのではなく、<strong>利便性とセキュリティのどちらを優先するかを考えた上で利用する</strong>必要があります。</p>
+<p>特に、仕事などで重要な情報をLINEで扱っている場合は、パスコードロックをOFFにすることによる影響も考慮した方がよいでしょう。
+今回の方法を利用する場合は、こうした制約があることを理解しておく必要があります。</p>
+<h2 id="まとめ">まとめ</h2>
+<p>今回は、iPhoneのショートカットを使って、家族への「今から帰ります」というLINE送信を自動化してみました。
+最終的には、</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>帰るボタン
+</span></span><span style="display:flex;"><span>    ↓
+</span></span><span style="display:flex;"><span>確認ダイアログ
+</span></span><span style="display:flex;"><span>    ↓
+</span></span><span style="display:flex;"><span>送信
+</span></span><span style="display:flex;"><span>    ↓
+</span></span><span style="display:flex;"><span>家族に「今から帰ります」を通知
+</span></span></code></pre></div><p>という流れを作ることができました。
+毎回LINEを開いてトークを探し、メッセージを入力する必要がなくなったため、日常的に繰り返していた操作を一つ減らすことができました。</p>
+<p>今回のように、普段から繰り返しているちょっとした操作でも、iPhoneのショートカットを使えば自動化できる場合があります。
+「毎回同じ操作をしているな」と感じるものがあれば、一度ショートカットで自動化できないか試してみると、意外と便利になるかもしれません。</p>
+<p>最後まで記事を見てくださり、ありがとうございました。</p>
+<ul class="pa0">
+  
+   <li class="list di">
+     <a href="/tags/line/" class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">LINE</a>
+   </li>
+  
+   <li class="list di">
+     <a href="/tags/%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F%E7%B3%BB/" class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">作ってみた系</a>
+   </li>
+  
+   <li class="list di">
+     <a href="/tags/%E8%87%AA%E5%8B%95%E5%8C%96/" class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">自動化</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/posts/app-dev/gemshare/gemshare-lp/">【Claude】ClaudeでLPを爆速作成！GemShareのランディングページを公開しました</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/posts/tech-blog/about-my-tech-blog/">技術ブログを開設しました</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="https://iwatanabe-7.com/" >
+    &copy;  Nabe Tech Blog 2026 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>
