@@ -6,8 +6,29 @@
     <description>Recent content in 技術ブログ on Nabe Tech Blog</description>
     <generator>Hugo</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Tue, 07 Jul 2026 20:05:22 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 22 Sep 2026 20:05:22 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/tech-blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【技術ブログ】WordPressではなくHugoを選んだ理由</title>
+      <link>http://localhost:1313/posts/tech-blog/why-i-chose-hugo-over-wordpress/</link>
+      <pubDate>Tue, 22 Sep 2026 20:05:22 +0900</pubDate>
+      <guid>http://localhost:1313/posts/tech-blog/why-i-chose-hugo-over-wordpress/</guid>
+      <description>技術ブログを作成する際にWordPressではなくHugoを選んだ理由について書きました。</description>
+    </item>
+    <item>
+      <title>【技術ブログ】なぜドメイン代だけの構成にしたのか</title>
+      <link>http://localhost:1313/posts/tech-blog/why-i-chose-a-domain-only-cost-setup/</link>
+      <pubDate>Tue, 22 Sep 2026 20:05:22 +0900</pubDate>
+      <guid>http://localhost:1313/posts/tech-blog/why-i-chose-a-domain-only-cost-setup/</guid>
+      <description>技術ブログを作成する際にWordPressではなくHugoを選んだ理由について書きました。</description>
+    </item>
+    <item>
+      <title>【技術ブログ】なぜ技術ブログを作ろうと思ったのか</title>
+      <link>http://localhost:1313/posts/tech-blog/why-i-started-this-blog/</link>
+      <pubDate>Tue, 22 Sep 2026 20:05:22 +0900</pubDate>
+      <guid>http://localhost:1313/posts/tech-blog/why-i-started-this-blog/</guid>
+      <description>技術ブログを作ろうと思ったきっかけや考えたことについて書きました。</description>
+    </item>
     <item>
       <title>技術ブログを開設しました</title>
       <link>http://localhost:1313/posts/tech-blog/about-my-tech-blog/</link>

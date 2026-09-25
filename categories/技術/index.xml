@@ -6,8 +6,36 @@
     <description>Recent content in 技術 on Nabe Tech Blog</description>
     <generator>Hugo</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Tue, 07 Jul 2026 20:05:22 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 22 Sep 2026 20:05:22 +0900</lastBuildDate>
     <atom:link href="https://iwatanabe-7.com/categories/%E6%8A%80%E8%A1%93/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【技術ブログ】WordPressではなくHugoを選んだ理由</title>
+      <link>https://iwatanabe-7.com/posts/tech-blog/why-i-chose-hugo-over-wordpress/</link>
+      <pubDate>Tue, 22 Sep 2026 20:05:22 +0900</pubDate>
+      <guid>https://iwatanabe-7.com/posts/tech-blog/why-i-chose-hugo-over-wordpress/</guid>
+      <description>技術ブログを作成する際にWordPressではなくHugoを選んだ理由について書きました。</description>
+    </item>
+    <item>
+      <title>【技術ブログ】なぜドメイン代だけの構成にしたのか</title>
+      <link>https://iwatanabe-7.com/posts/tech-blog/why-i-chose-a-domain-only-cost-setup/</link>
+      <pubDate>Tue, 22 Sep 2026 20:05:22 +0900</pubDate>
+      <guid>https://iwatanabe-7.com/posts/tech-blog/why-i-chose-a-domain-only-cost-setup/</guid>
+      <description>技術ブログを作成する際にWordPressではなくHugoを選んだ理由について書きました。</description>
+    </item>
+    <item>
+      <title>【技術ブログ】なぜ技術ブログを作ろうと思ったのか</title>
+      <link>https://iwatanabe-7.com/posts/tech-blog/why-i-started-this-blog/</link>
+      <pubDate>Tue, 22 Sep 2026 20:05:22 +0900</pubDate>
+      <guid>https://iwatanabe-7.com/posts/tech-blog/why-i-started-this-blog/</guid>
+      <description>技術ブログを作ろうと思ったきっかけや考えたことについて書きました。</description>
+    </item>
+    <item>
+      <title>自己紹介</title>
+      <link>https://iwatanabe-7.com/posts/profile/my-first-post/</link>
+      <pubDate>Tue, 07 Jul 2026 20:58:15 +0900</pubDate>
+      <guid>https://iwatanabe-7.com/posts/profile/my-first-post/</guid>
+      <description>初めまして、ナベです。&lt;br&gt;&#xA;新卒でバックエンドエンジニアとして働いています。日々の業務で学んだことや作っているサービスについて書いていきます。</description>
+    </item>
     <item>
       <title>技術ブログを開設しました</title>
       <link>https://iwatanabe-7.com/posts/tech-blog/about-my-tech-blog/</link>
@@ -21,13 +49,6 @@
       <pubDate>Mon, 03 Nov 2025 17:16:56 +0900</pubDate>
       <guid>https://iwatanabe-7.com/posts/skill/itpassport/</guid>
       <description>「ITパスポート」を取得しました。&lt;br&gt;&#xA;勉強方法を備忘録として書いておきます。</description>
-    </item>
-    <item>
-      <title>自己紹介</title>
-      <link>https://iwatanabe-7.com/posts/profile/my-first-post/</link>
-      <pubDate>Tue, 15 Jul 2025 20:58:15 +0900</pubDate>
-      <guid>https://iwatanabe-7.com/posts/profile/my-first-post/</guid>
-      <description>初めまして、ナベです。&lt;br&gt;&#xA;新卒でバックエンドエンジニアとして働いています。日々の業務で学んだことや作っているサービスについて書いていきます。</description>
     </item>
   </channel>
 </rss>

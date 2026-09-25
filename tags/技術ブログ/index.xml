@@ -6,8 +6,29 @@
     <description>Recent content in 技術ブログ on Nabe Tech Blog</description>
     <generator>Hugo</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Tue, 07 Jul 2026 20:05:22 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 22 Sep 2026 20:05:22 +0900</lastBuildDate>
     <atom:link href="https://iwatanabe-7.com/tags/%E6%8A%80%E8%A1%93%E3%83%96%E3%83%AD%E3%82%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【技術ブログ】WordPressではなくHugoを選んだ理由</title>
+      <link>https://iwatanabe-7.com/posts/tech-blog/why-i-chose-hugo-over-wordpress/</link>
+      <pubDate>Tue, 22 Sep 2026 20:05:22 +0900</pubDate>
+      <guid>https://iwatanabe-7.com/posts/tech-blog/why-i-chose-hugo-over-wordpress/</guid>
+      <description>技術ブログを作成する際にWordPressではなくHugoを選んだ理由について書きました。</description>
+    </item>
+    <item>
+      <title>【技術ブログ】なぜドメイン代だけの構成にしたのか</title>
+      <link>https://iwatanabe-7.com/posts/tech-blog/why-i-chose-a-domain-only-cost-setup/</link>
+      <pubDate>Tue, 22 Sep 2026 20:05:22 +0900</pubDate>
+      <guid>https://iwatanabe-7.com/posts/tech-blog/why-i-chose-a-domain-only-cost-setup/</guid>
+      <description>技術ブログを作成する際にWordPressではなくHugoを選んだ理由について書きました。</description>
+    </item>
+    <item>
+      <title>【技術ブログ】なぜ技術ブログを作ろうと思ったのか</title>
+      <link>https://iwatanabe-7.com/posts/tech-blog/why-i-started-this-blog/</link>
+      <pubDate>Tue, 22 Sep 2026 20:05:22 +0900</pubDate>
+      <guid>https://iwatanabe-7.com/posts/tech-blog/why-i-started-this-blog/</guid>
+      <description>技術ブログを作ろうと思ったきっかけや考えたことについて書きました。</description>
+    </item>
     <item>
       <title>技術ブログを開設しました</title>
       <link>https://iwatanabe-7.com/posts/tech-blog/about-my-tech-blog/</link>

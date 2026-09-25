@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ja-jp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>【技術ブログ】なぜドメイン代だけの構成にしたのか | Nabe Tech Blog</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="技術ブログを作成する際にWordPressではなくHugoを選んだ理由について書きました。">
+    <meta name="generator" content="Hugo 0.148.1">
+    
+    
+    
+      <meta name="robots" content="index, follow">
+    
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.f8083f2fb1788f3d42f1e3ac44a66434e02493606e6a16e15d28f90b5d096bb7.css" >
+
+
+
+  
+
+
+    
+
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="https://iwatanabe-7.com/posts/tech-blog/why-i-chose-a-domain-only-cost-setup/">
+    
+
+    <meta property="og:url" content="https://iwatanabe-7.com/posts/tech-blog/why-i-chose-a-domain-only-cost-setup/">
+  <meta property="og:site_name" content="Nabe Tech Blog">
+  <meta property="og:title" content="【技術ブログ】なぜドメイン代だけの構成にしたのか">
+  <meta property="og:description" content="技術ブログを作成する際にWordPressではなくHugoを選んだ理由について書きました。">
+  <meta property="og:locale" content="ja_jp">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-09-22T20:05:22+09:00">
+    <meta property="article:modified_time" content="2026-09-22T20:05:22+09:00">
+    <meta property="article:tag" content="技術ブログ">
+    <meta property="article:tag" content="作ってみた系">
+
+  <meta itemprop="name" content="【技術ブログ】なぜドメイン代だけの構成にしたのか">
+  <meta itemprop="description" content="技術ブログを作成する際にWordPressではなくHugoを選んだ理由について書きました。">
+  <meta itemprop="datePublished" content="2026-09-22T20:05:22+09:00">
+  <meta itemprop="dateModified" content="2026-09-22T20:05:22+09:00">
+  <meta itemprop="wordCount" content="46">
+  <meta itemprop="keywords" content="技術ブログ,作ってみた系">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="【技術ブログ】なぜドメイン代だけの構成にしたのか">
+  <meta name="twitter:description" content="技術ブログを作成する際にWordPressではなくHugoを選んだ理由について書きました。">
+
+      
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-37KY05FRQG"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-37KY05FRQG');
+        }
+      </script>
+    
+	
+  </head><body class="ma0 avenir bg-near-white production">
+
+    
+   
+  
+
+  
+  
+  
+  <header class="cover bg-center" style="background-image: url('https://iwatanabe-7.com/images/icon/techblogtop.png');">
+    <div class="bg-black-60">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        Nabe Tech Blog
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/posts/profile/my-first-post/" title="about page">
+              about
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="https://github.com/iwatanabe-7" title="Github page">
+              Github
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/" title="Posts page">
+              Posts
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/tags/" title="Tags page">
+              Tags
+            </a>
+          </li>
+          
+        </ul>
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+          <div class="f2 f1-l fw2 white-90 mb0 lh-title">【技術ブログ】なぜドメイン代だけの構成にしたのか</div>
+          
+            <div class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
+              技術ブログを作成する際にWordPressではなくHugoを選んだ理由について書きました。
+            </div>
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  
+  <article class="flex-l mw8 center ph3 flex-wrap justify-between bg-white">
+    <header class="pt3 w-100">
+      <aside class=" instapaper_ignoref b helvetica tracked ttu">
+          
+        技術ブログ
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="athelas mt3 mb1">【技術ブログ】なぜドメイン代だけの構成にしたのか</h1>
+      
+      
+      
+      <time class="f6 mv2 dib tracked" datetime="2026-09-22T20:05:22+09:00">2026年9月22日</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f5 nested-links black pr4-l w-100"><p><img src="/images/icon/techblogtop.png" alt="技術ブログのトップページ"></p>
+<h2 id="はじめに">はじめに</h2>
+<p>本技術ブログは、HugoとGitHub Pagesを利用し、費用はドメイン代だけで運営しています。</p>
+<p>技術ブログを始めるにあたっては、WordPressとレンタルサーバーを利用する構成も検討していました。しかし最終的には、できるだけお金をかけずに始められる現在の構成を選びました。</p>
+<p>今回は、なぜそのような選択をしたのかについて書いてみようと思います。</p>
+<h2 id="最初から大きく始める必要はないと思った">最初から大きく始める必要はないと思った</h2>
+<p>ブログを始めようと考えたとき、最初に悩んだのはどのような構成で運営するかでした。</p>
+<p>世の中には多くのブログサービスや構築方法がありますが、調べてみるとWordPressとレンタルサーバーを組み合わせた構成が非常に多いことが分かりました。実際、私自身も学生時代にWordPressを触った経験があり、使いやすさや情報量の多さは魅力的だと感じていました。</p>
+<p>技術ブログは始めること自体はそれほど難しくありません。しかし、継続することは簡単ではありません。私自身も過去に途中で更新が止まってしまったサイトやプロジェクトを経験しています。</p>
+<p>そのため、最初からお金をかけて立派な環境を作るよりも、まずは記事を書き続けられる環境を作ることの方が重要だと考えるようになりました。</p>
+<h2 id="学生時代の経験が判断材料になった">学生時代の経験が判断材料になった</h2>
+<p>今回の構成を選ぶうえで大きかったのは、学生時代の経験です。</p>
+<p>大学生の頃、一度個人ブログを作ったことがありました。当時は技術的な知識も十分ではなく、今振り返るとかなり試行錯誤しながら運営していたと思います。</p>
+<p>その中で知ったのがGitHub Pagesでした。</p>
+<p>GitHub Pagesを利用すると、静的なWebサイトを無料で公開できます。最初は「本当に無料で公開できるのか」と驚いたことを覚えています。</p>
+<p>また、大学時代には所属していた団体のホームページ制作にも携わる機会がありました。その際も運用コストをできるだけ抑えたいという要望があり、静的サイトで公開をしていました。</p>
+<p>この経験から、「小規模なサイトであれば高価な環境がなくても十分に運営できる」という考えを持つようになりました。</p>
+<h2 id="ブログ運営そのものも学習にしたかった">ブログ運営そのものも学習にしたかった</h2>
+<p>今回ブログを作る目的は、単に記事を書くことだけではありませんでした。</p>
+<p>エンジニアとして働く中で、学習した内容をアウトプットする場所が欲しいという気持ちはもちろんありましたが、それと同じくらい「ブログを作る過程そのものを学習にしたい」という思いもありました。</p>
+<p>HugoとGitHub Pagesを利用すると、記事の管理にGitを利用します。</p>
+<p>記事を書くたびにコミットし、GitHubへPushし、サイトを公開する。</p>
+<p>この流れは普段の開発に近く、エンジニアとして自然な運用方法だと感じました。</p>
+<p>さらに、独自ドメインの設定やDNSの知識、GitHub Actionsによる自動デプロイなど、ブログを運営するだけでも学べることがたくさんあります。</p>
+<p>単なる情報発信の場ではなく、自分自身の学習環境としても魅力を感じました。</p>
+<h2 id="固定費が少ないことのメリット">固定費が少ないことのメリット</h2>
+<p>ドメイン代だけで運営できるという点も、実際には大きなメリットでした。<br>
+実際に年間で1200円くらいで運営ができています。</p>
+<p>もちろん、レンタルサーバー代はそこまで高額ではありません。しかし、毎月料金が発生するサービスには少なからず心理的な負担があります。</p>
+<p>「せっかくお金を払っているのだから更新しなければ」</p>
+<p>と思うこともあるでしょう。</p>
+<p>それがモチベーションになる人もいると思いますが、私の場合はまず継続することを優先したかったため、余計なプレッシャーをできるだけ減らしたいと考えていました。</p>
+<p>ドメイン代だけであれば負担も小さく、自分のペースで運営できます。</p>
+<p>だからこそ、アクセス数や収益を気にしすぎず、まずは記事を書くことに集中できる環境を作ることができました。</p>
+<h2 id="まとめ">まとめ</h2>
+<p>最終的に、私はHugoとGitHub Pagesを利用したドメイン代だけの構成を選びました。</p>
+<p>その理由は単純にお金を節約したかったからではありません。</p>
+<p>継続できるか分からない段階で大きな投資をしたくなかったこと、学生時代の経験から静的サイト運営の良さを知っていたこと、そしてブログ運営そのものを学習の機会にしたかったことが大きな理由です。</p>
+<p>まずは小さく始めてみる。そして続けながら改善していく。</p>
+<p>この考え方はブログ運営だけでなく、個人開発や技術学習にも共通しているように思います。</p>
+<p>今後も無理なく続けながら、このブログを少しずつ育てていきたいと思います。</p>
+<ul class="pa0">
+  
+   <li class="list di">
+     <a href="/tags/%E6%8A%80%E8%A1%93%E3%83%96%E3%83%AD%E3%82%B0/" class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">技術ブログ</a>
+   </li>
+  
+   <li class="list di">
+     <a href="/tags/%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F%E7%B3%BB/" class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">作ってみた系</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/posts/tech-blog/why-i-chose-hugo-over-wordpress/">【技術ブログ】WordPressではなくHugoを選んだ理由</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/posts/tech-blog/why-i-started-this-blog/">【技術ブログ】なぜ技術ブログを作ろうと思ったのか</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/posts/tech-blog/about-my-tech-blog/">技術ブログを開設しました</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/posts/lifehack/line-one-tap-message/">【自動化】「今から帰ります」をワンタップで家族LINEに送る仕組みを作ってみた</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/posts/app-dev/gemshare/gemshare-lp/">【Claude】ClaudeでLPを爆速作成！GemShareのランディングページを公開しました</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="https://iwatanabe-7.com/" >
+    &copy;  Nabe Tech Blog 2026 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>
