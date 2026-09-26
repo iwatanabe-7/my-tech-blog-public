@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ja-jp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>【ゲーム開発】ブラウザで遊べる和風ホラー脱出ゲーム「丑三つの間」を作成しました。 | Nabe Tech Blog</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="ブラウザで遊べる和風ホラー脱出ゲーム「丑三つの間」を作成しました。">
+    <meta name="generator" content="Hugo 0.148.1">
+    
+    
+    
+      <meta name="robots" content="index, follow">
+    
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.cb7ffbae4ce2d233700a3797bfbc6738c58c726a8c286300f67bfa229e6f96de.css" >
+
+
+
+  
+
+
+    <script>
+(function () {
+  var PIXELS_PER_SEC = 30;
+
+  function marquee(container) {
+    if (container.dataset.marqueeBound) return;
+
+    var track = container.querySelector(".card-tags-track");
+    if (!track) return;
+
+    var originalWidth = track.scrollWidth;
+    if (originalWidth <= container.clientWidth + 1) return;
+
+    container.dataset.marqueeBound = "1";
+
+    
+    var originalChildren = [].slice.call(track.children);
+    originalChildren.forEach(function (child) {
+      var dup = child.cloneNode(true);
+      dup.setAttribute("aria-hidden", "true");
+      dup.setAttribute("tabindex", "-1");
+      track.appendChild(dup);
+    });
+
+    var gap = parseFloat(getComputedStyle(track).columnGap || getComputedStyle(track).gap || 0) || 0;
+    var loopWidth = originalWidth + gap;
+
+    var paused = false;
+    var offset = 0;
+    var last = null;
+
+    container.addEventListener("mouseenter", function () { paused = true; });
+    container.addEventListener("mouseleave", function () { paused = false; });
+    container.addEventListener("touchstart", function () { paused = true; }, { passive: true });
+    container.addEventListener("touchend", function () { paused = false; });
+
+    function step(ts) {
+      if (last === null) last = ts;
+      var dt = ts - last;
+      last = ts;
+
+      if (!paused) {
+        offset += (PIXELS_PER_SEC * dt) / 1000;
+        if (offset >= loopWidth) {
+          offset -= loopWidth;
+        }
+        track.style.transform = "translateX(" + -offset + "px)";
+      }
+
+      requestAnimationFrame(step);
+    }
+
+    requestAnimationFrame(step);
+  }
+
+  function init() {
+    if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      return;
+    }
+    document.querySelectorAll(".card-tags").forEach(marquee);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+  window.addEventListener("load", init);
+})();
+</script>
+
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="https://iwatanabe-7.com/posts/game-dev/ushimitsu-no-ma/about-ushimitsu-no-ma/">
+    
+
+    <meta property="og:url" content="https://iwatanabe-7.com/posts/game-dev/ushimitsu-no-ma/about-ushimitsu-no-ma/">
+  <meta property="og:site_name" content="Nabe Tech Blog">
+  <meta property="og:title" content="【ゲーム開発】ブラウザで遊べる和風ホラー脱出ゲーム「丑三つの間」を作成しました。">
+  <meta property="og:description" content="ブラウザで遊べる和風ホラー脱出ゲーム「丑三つの間」を作成しました。">
+  <meta property="og:locale" content="ja_jp">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-09-26T18:00:15+09:00">
+    <meta property="article:modified_time" content="2026-09-26T18:00:15+09:00">
+    <meta property="article:tag" content="Claude">
+    <meta property="article:tag" content="ゲーム開発">
+    <meta property="article:tag" content="丑三つの間">
+    <meta property="article:tag" content="作ってみた系">
+
+  <meta itemprop="name" content="【ゲーム開発】ブラウザで遊べる和風ホラー脱出ゲーム「丑三つの間」を作成しました。">
+  <meta itemprop="description" content="ブラウザで遊べる和風ホラー脱出ゲーム「丑三つの間」を作成しました。">
+  <meta itemprop="datePublished" content="2026-09-26T18:00:15+09:00">
+  <meta itemprop="dateModified" content="2026-09-26T18:00:15+09:00">
+  <meta itemprop="wordCount" content="220">
+  <meta itemprop="keywords" content="Claude,ゲーム開発,丑三つの間,作ってみた系">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="【ゲーム開発】ブラウザで遊べる和風ホラー脱出ゲーム「丑三つの間」を作成しました。">
+  <meta name="twitter:description" content="ブラウザで遊べる和風ホラー脱出ゲーム「丑三つの間」を作成しました。">
+
+      
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-37KY05FRQG"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-37KY05FRQG');
+        }
+      </script>
+    
+	
+  </head><body class="ma0 avenir bg-near-white production">
+
+    
+   
+  
+
+  
+  
+  
+  <header class="cover bg-center" style="background-image: url('https://iwatanabe-7.com/images/ushimitsu-no-ma/ushimitsu-no-ma-main.png');">
+    <div class="bg-black-60">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        Nabe Tech Blog
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/posts/profile/my-first-post/" title="about page">
+              about
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="https://github.com/iwatanabe-7" title="Github page">
+              Github
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/" title="Posts page">
+              Posts
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/tags/" title="Tags page">
+              Tags
+            </a>
+          </li>
+          
+        </ul>
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+          <div class="f2 f1-l fw2 white-90 mb0 lh-title">【ゲーム開発】ブラウザで遊べる和風ホラー脱出ゲーム「丑三つの間」を作成しました。</div>
+          
+            <div class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
+              ブラウザで遊べる和風ホラー脱出ゲーム「丑三つの間」を作成しました。
+            </div>
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  
+  <article class="flex-l mw8 center ph3 flex-wrap justify-between bg-white">
+    <header class="pt3 w-100">
+      <aside class=" instapaper_ignoref b helvetica tracked ttu">
+          
+        丑三つの間
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="athelas mt3 mb1">【ゲーム開発】ブラウザで遊べる和風ホラー脱出ゲーム「丑三つの間」を作成しました。</h1>
+      
+      
+      
+      <time class="f6 mv2 dib tracked" datetime="2026-09-26T18:00:15+09:00">2026年9月26日</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f5 nested-links black pr4-l w-100"><p><img src="/images/ushimitsu-no-ma/ushimitsu-no-ma-main.png" alt="「丑三つの間」のスタート画面"></p>
+<h2 id="はじめに">はじめに</h2>
+<p>深夜、見知らぬ和室で目を覚ます。時計の針は午前1時57分。丑三つ時の午前2時までに部屋から出られなければ――。</p>
+<p>そんな短編ホラー脱出ゲーム「丑三つの間」を作りました。ブラウザだけで遊べて、クリアまでは3分ほどです。</p>
+<p>▶ 遊ぶ: <a href="https://iwatanabe-7.github.io/ushimitsu-no-ma/">https://iwatanabe-7.github.io/ushimitsu-no-ma/</a></p>
+<p>最初のコミットから公開までは、ほぼ2日でした。この記事では、何を作ったのか、どんな順番で肉付けしていったのか、それからゲーム投稿サイト「ふりーむ!」に出すために作り直した話を書きます。</p>
+<h2 id="どんなゲームか">どんなゲームか</h2>
+<p><img src="/images/ushimitsu-no-ma/ushimitsu-no-ma-play-1.png" alt="「丑三つの間」のプレイ画面"></p>
+<p>舞台は6か所を調べられる和室です。</p>
+<ul>
+<li>床の間の掛け軸</li>
+<li>押入れ</li>
+<li>仏壇</li>
+<li>畳</li>
+<li>鏡台</li>
+<li>出口の襖</li>
+</ul>
+<p>押入れの人形から鍵を見つけ、その鍵で仏壇の引き出しを開けると、暗証番号の手がかりが出てきます。掛け軸・畳・仏壇に隠れた3つの数字を集め、出口の襖のダイヤル錠に合わせれば脱出成功です。</p>
+<p>手順は短くしました。そのぶん、調べるたびに出る文章と、ときどき流れる環境メッセージで空気を作っています。「行灯の灯りが、わずかに揺れた。」「障子の向こうを、何かが横切った。」といった一文が、ランダムにログへ差し込まれます。怖さの大部分はこういうテキストが担っています。</p>
+<p>鏡台は脱出には関係しません。ただ、ここを調べてからクリアすると、エンディングに一文が足されます。寄り道した人だけが見られる小さなご褒美です。</p>
+<h2 id="開発の流れ">開発の流れ</h2>
+<p>コミット履歴をさかのぼると、だいたい次の順番で作っていました。</p>
+<ol>
+<li><strong>HTML 1枚で原型を作る</strong>:部屋・調べる場所・インベントリ・ダイヤル錠を DOM と CSS で組んで、まず最後まで遊べる形にした</li>
+<li><strong>怖さを足す</strong>:BGM、1分の制限時間、ジャンプスケア(幽霊が画面に飛び出してくる演出)を追加</li>
+<li><strong>世界観に寄せる</strong>:制限時間を「残り◯秒」ではなく「午前1時57分 → 2時00分」と進む時計にした。ジャンプスケアの幽霊も写真に差し替えた</li>
+<li><strong>スマホ対応</strong>:viewport の設定、<code>dvh</code> のフォールバック、タップ領域の拡大、結果パネルへの自動スクロール</li>
+<li><strong>canvas で全面的に書き直す</strong>:ふりーむ!の規約に合わせるため(後述)</li>
+<li><strong>描画ずれの修正</strong>:アイコンや文字の位置がずれるバグを直した</li>
+</ol>
+<p>実装には Claude Code を使っています。「こういう演出を足したい」「スマホで押しにくい」と伝えて、コードを書いてもらい、動かして確かめる。この往復を細かく回しました。仕様を決めるのと遊んで確かめるのは自分、実装の手はAI、という分担です。</p>
+<h3 id="残り時間を時計に変えた">「残り時間」を「時計」に変えた</h3>
+<p>最初の制限時間はただの60秒カウントダウンでした。これを「午前1時57分00秒から進んで、2時00分00秒になったら終わり」という時計表示に変えています。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">CLOCK_START_SEC</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">3600</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">57</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">60</span>; <span style="color:#75715e">// 午前1時57分00秒
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">CLOCK_END_SEC</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">3600</span>;             <span style="color:#75715e">// 午前2時00分00秒(丑三つ時)
+</span></span></span></code></pre></div><p>仕組みはまったく同じ60秒なのに、「残り60秒」より「丑三つ時が近づいている」のほうがずっと焦ります。残り30秒になると一度ジャンプスケアが入り、時計は警告色に変わります。数字の意味を世界観に合わせるだけで体験が変わる、というのは作ってみて一番の発見でした。</p>
+<h3 id="bgm-は音声ファイルを使わず-web-audio-api-で鳴らす">BGM は音声ファイルを使わず Web Audio API で鳴らす</h3>
+<p>BGM は音源ファイルを持たず、Web Audio API で合成しています。55Hz・82.5Hz・110Hz の低い音を3つ重ねて、ローパスフィルタで角を取ります。そこにごく遅い LFO(0.06Hz)で音量をゆっくり揺らすと、「部屋そのものが低く唸っている」ような音になります。</p>
+<p>ジャンプスケアの効果音も同じ作りです。220Hz・233Hz・415Hz のノコギリ波を一瞬だけ重ね、不協和音を鳴らしています。はじめは音が大きすぎて、自分で試していても本当に心臓に悪かったので、音量を下げるコミットを入れました。ホラーの効果音は「怖い」と「不快」の境目が近いので、ここは何度も聴いて調整しました。</p>
+<h2 id="ふりーむに出そうとして全部作り直した話">ふりーむ!に出そうとして、全部作り直した話</h2>
+<p>完成したのでふりーむ!に登録しようとしたところ、ブラウザゲームとしての条件を満たしていませんでした。引っかかったのは次の3点です。</p>
+<ol>
+<li><strong>UI が HTML タグで作られていた</strong>:ボタンや文章が DOM 要素として <code>&lt;body&gt;</code> に並んでいた</li>
+<li><strong>外部サーバーと通信していた</strong>:Google Fonts を読み込んでいた</li>
+<li><strong>画像を HTML に埋め込んでいた</strong>:幽霊の写真を base64 の data URI で HTML に直接書いていた</li>
+</ol>
+<p>2と3はすぐ直せます。Google Fonts をやめて OS 標準の明朝体・ゴシック体を使い、画像は <code>assets/ghost.jpg</code> という別ファイルに切り出しました。</p>
+<p>問題は1です。タイトル画面、6つの調査カード、ログパネル、インベントリ、ダイヤル錠、エンディング画面まで、すべてを <code>&lt;canvas&gt;</code> の上に JavaScript で描き直す必要がありました。最終的に <code>index.html</code> は <code>&lt;canvas&gt;</code> と <code>&lt;script&gt;</code> があるだけのファイルになり、代わりに <code>game.js</code> が約1600行になりました。</p>
+<h3 id="canvas-で-ui-を作るとブラウザがやってくれていたことを全部自分でやることになる">canvas で UI を作ると、ブラウザがやってくれていたことを全部自分でやることになる</h3>
+<p>書き直してみて、HTML と CSS がどれだけ多くを肩代わりしてくれていたかを実感しました。</p>
+<ul>
+<li><strong>当たり判定</strong>:ボタンのクリック判定がないので、描画のたびに「この矩形を押したらこの処理」を登録し、クリック座標から探す仕組みを作った</li>
+<li><strong>折り返し</strong>:日本語の文章を枠内で折り返す処理を、文字単位で自前実装した</li>
+<li><strong>字間</strong>:CSS の <code>letter-spacing</code> がないので、1文字ずつ位置を計算して描いた</li>
+<li><strong>スクロール</strong>:ログがあふれたときのスクロールも自前</li>
+<li><strong>高解像度対応</strong>:<code>devicePixelRatio</code> を見て canvas の実サイズを調整しないと、文字がにじむ</li>
+</ul>
+<p>画面がリサイズされたら、レイアウトを計算し直して毎フレーム描き直します。宣言的に書けば済んでいた UI を、全部手続き的に組み直す作業でした。</p>
+<h3 id="書き直しで入ったバグ2つ">書き直しで入ったバグ2つ</h3>
+<p>移植直後、見た目のずれが2つ出ました。どちらも原因が面白かったので書いておきます。</p>
+<p><strong>① アイコンが右下にずれる</strong></p>
+<p>アイコンを描く <code>drawIcon(x, y)</code> は、受け取った座標を「左上の角」として扱っていました。一方、呼び出す側はすべて「アイコンの中心」のつもりで座標を渡していました。その結果、すべてのアイコンがサイズの半分だけ右下にずれていたのです。関数の側を「中心座標を受け取る」に合わせて直しました。</p>
+<p><strong>② 中央揃えの文字が左に流れる</strong></p>
+<p>字間つきで文字を描く関数は、1文字ずつ「左端の x 座標」を計算して <code>fillText</code> を呼んでいました。ところが <code>ctx.textAlign</code> を自分では設定しておらず、直前の描画で残っていた <code>&quot;center&quot;</code> がそのまま効いていました。その結果、「左端として計算した位置」を基準に1文字ずつさらに中央揃えされ、文字列全体が左へずれていました。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">prevAlign</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">ctx</span>.<span style="color:#a6e22e">textAlign</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">ctx</span>.<span style="color:#a6e22e">textAlign</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;left&#34;</span>; <span style="color:#75715e">// 位置はすでに1文字ずつの左端として計算済み
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">ch</span> <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">text</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">ctx</span>.<span style="color:#a6e22e">fillText</span>(<span style="color:#a6e22e">ch</span>, <span style="color:#a6e22e">cx</span>, <span style="color:#a6e22e">y</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">cx</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">ctx</span>.<span style="color:#a6e22e">measureText</span>(<span style="color:#a6e22e">ch</span>).<span style="color:#a6e22e">width</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">spacing</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">ctx</span>.<span style="color:#a6e22e">textAlign</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">prevAlign</span>;
+</span></span></code></pre></div><p>canvas のコンテキストは描画状態をずっと持ち続けます。「前に誰かが設定した状態」に知らないうちに依存してしまうのは、canvas でよくある落とし穴だと身をもって知りました。状態を変える関数は、自分で設定して自分で戻す。これを徹底するべきでした。</p>
+<h2 id="やってみて思ったこと">やってみて思ったこと</h2>
+<p><strong>小さく完成させてから肉付けする順番はよかった。</strong><br>
+最初の1コミットで最後まで遊べる状態にしていたので、そのあとの「怖くする」「スマホ対応」「作り直し」は、どれも動くものを壊さずに進められました。</p>
+<p><strong>公開先の条件は最初に確認するべきだった。</strong><br>
+DOM で組んだ UI を canvas に移すのは、ほぼ作り直しです。最初から「ふりーむ!」に出すと決めていたなら、はじめから canvas で作ったほうが手戻りはずっと少なかったはずです。これが一番の反省です。</p>
+<p><strong>AI と組むと「決めること」に集中できる。</strong><br>
+時計の見せ方、効果音の音量、どこで驚かせるか。こうした判断に時間を使えたのは、実装の多くを Claude Code に任せられたからです。一方で、アイコンのずれのような「動くけど見た目がおかしい」問題は、実際に画面を見て気づけるかどうかにかかっていました。確かめる役は人間が手放してはいけないと感じています。</p>
+<h2 id="おわりに">おわりに</h2>
+<p>「丑三つの間」は3分ほどで遊べるので、よければ夜中に部屋を暗くして遊んでみてください。音が出るので、音量にはご注意を。</p>
+<p>▶ <a href="https://iwatanabe-7.github.io/ushimitsu-no-ma/">https://iwatanabe-7.github.io/ushimitsu-no-ma/</a></p>
+<p>ソースコードは GitHub で公開しています。canvas だけで UI を組む実装例としても、参考になればうれしいです。</p>
+<ul class="pa0">
+  
+   <li class="list di">
+     <a href="/tags/claude/" class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">Claude</a>
+   </li>
+  
+   <li class="list di">
+     <a href="/tags/%E3%82%B2%E3%83%BC%E3%83%A0%E9%96%8B%E7%99%BA/" class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">ゲーム開発</a>
+   </li>
+  
+   <li class="list di">
+     <a href="/tags/%E4%B8%91%E4%B8%89%E3%81%A4%E3%81%AE%E9%96%93/" class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">丑三つの間</a>
+   </li>
+  
+   <li class="list di">
+     <a href="/tags/%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F%E7%B3%BB/" class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">作ってみた系</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-100 mt5">
+
+
+
+
+  <div class="related-posts">
+    <p class="related-posts-title">おすすめ記事</p>
+    <div class="related-posts-grid">
+      
+        
+        <a href="/posts/app-dev/gemshare/gemshare-lp/" class="related-post-card">
+          <div class="related-post-thumb" style="background-image:url('https://iwatanabe-7.com/images/gemshare/lp-img.png');"></div>
+          <span class="related-post-title">【Claude】ClaudeでLPを爆速作成！GemShareのランディングページを公開しました</span>
+        </a>
+      
+        
+        <a href="/posts/tech-blog/why-i-chose-hugo-over-wordpress/" class="related-post-card">
+          <div class="related-post-thumb" style="background-image:url('https://iwatanabe-7.com/images/techblog/why-i-chose-hugo-over-wordpress.png');"></div>
+          <span class="related-post-title">【技術ブログ】WordPressではなくHugoを選んだ理由</span>
+        </a>
+      
+        
+        <a href="/posts/tech-blog/why-i-chose-a-domain-only-cost-setup/" class="related-post-card">
+          <div class="related-post-thumb" style="background-image:url('https://iwatanabe-7.com/images/icon/techblogtop.png');"></div>
+          <span class="related-post-title">【技術ブログ】なぜドメイン代だけの構成にしたのか</span>
+        </a>
+      
+    </div>
+  </div>
+
+</aside>
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="https://iwatanabe-7.com/" >
+    &copy;  Nabe Tech Blog 2026 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

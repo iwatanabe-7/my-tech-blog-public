@@ -16,14 +16,83 @@
     
 
     
-<link rel="stylesheet" href="/ananke/css/main.min.f8083f2fb1788f3d42f1e3ac44a66434e02493606e6a16e15d28f90b5d096bb7.css" >
+<link rel="stylesheet" href="/ananke/css/main.min.cb7ffbae4ce2d233700a3797bfbc6738c58c726a8c286300f67bfa229e6f96de.css" >
 
 
 
   
 
 
+    <script>
+(function () {
+  var PIXELS_PER_SEC = 30;
+
+  function marquee(container) {
+    if (container.dataset.marqueeBound) return;
+
+    var track = container.querySelector(".card-tags-track");
+    if (!track) return;
+
+    var originalWidth = track.scrollWidth;
+    if (originalWidth <= container.clientWidth + 1) return;
+
+    container.dataset.marqueeBound = "1";
+
     
+    var originalChildren = [].slice.call(track.children);
+    originalChildren.forEach(function (child) {
+      var dup = child.cloneNode(true);
+      dup.setAttribute("aria-hidden", "true");
+      dup.setAttribute("tabindex", "-1");
+      track.appendChild(dup);
+    });
+
+    var gap = parseFloat(getComputedStyle(track).columnGap || getComputedStyle(track).gap || 0) || 0;
+    var loopWidth = originalWidth + gap;
+
+    var paused = false;
+    var offset = 0;
+    var last = null;
+
+    container.addEventListener("mouseenter", function () { paused = true; });
+    container.addEventListener("mouseleave", function () { paused = false; });
+    container.addEventListener("touchstart", function () { paused = true; }, { passive: true });
+    container.addEventListener("touchend", function () { paused = false; });
+
+    function step(ts) {
+      if (last === null) last = ts;
+      var dt = ts - last;
+      last = ts;
+
+      if (!paused) {
+        offset += (PIXELS_PER_SEC * dt) / 1000;
+        if (offset >= loopWidth) {
+          offset -= loopWidth;
+        }
+        track.style.transform = "translateX(" + -offset + "px)";
+      }
+
+      requestAnimationFrame(step);
+    }
+
+    requestAnimationFrame(step);
+  }
+
+  function init() {
+    if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      return;
+    }
+    document.querySelectorAll(".card-tags").forEach(marquee);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+  window.addEventListener("load", init);
+})();
+</script>
 
 
     
@@ -49,8 +118,8 @@
   <meta property="og:type" content="website">
 
   <meta itemprop="name" content="Claude">
-  <meta itemprop="datePublished" content="2026-07-19T18:00:15+09:00">
-  <meta itemprop="dateModified" content="2026-07-19T18:00:15+09:00">
+  <meta itemprop="datePublished" content="2026-09-26T18:00:15+09:00">
+  <meta itemprop="dateModified" content="2026-09-26T18:00:15+09:00">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Claude">
 
@@ -140,7 +209,7 @@
     <header class="taxonomy-header">
       <p class="taxonomy-label">タグ</p>
       <h1>#Claude</h1>
-      <p class="taxonomy-count">1 件の記事</p>
+      <p class="taxonomy-count">2 件の記事</p>
       <a class="taxonomy-back" href="/tags/">← タグ一覧へ</a>
     </header>
     <section class="w-100 mw8">
@@ -151,9 +220,53 @@
   <div class="db pv4 ph3 ph0-l dark-gray no-underline">
     <div class="flex-column flex-row-ns flex">
       
-        <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
+        <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns card-thumb">
+          <a href="/posts/game-dev/ushimitsu-no-ma/about-ushimitsu-no-ma/" class="db grow">
+            <img src="https://iwatanabe-7.com/images/ushimitsu-no-ma/ushimitsu-no-ma-main.png" class="img" alt="image from 【ゲーム開発】ブラウザで遊べる和風ホラー脱出ゲーム「丑三つの間」を作成しました。" style="object-position: center 75%;">
+          </a>
+        </div>
+      
+      <div class="blah w-100 w-60-ns pl3-ns">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/posts/game-dev/ushimitsu-no-ma/about-ushimitsu-no-ma/" class="color-inherit dim link">
+            【ゲーム開発】ブラウザで遊べる和風ホラー脱出ゲーム「丑三つの間」を作成しました。
+          </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          Claude でブラウザゲーム「丑三つの間」を作成しました。
+        </div>
+        
+          <div class="card-tags">
+            <div class="card-tags-track">
+              
+                <a href="/tags/claude/" class="card-tag">#Claude</a>
+              
+                <a href="/tags/%E3%82%B2%E3%83%BC%E3%83%A0%E9%96%8B%E7%99%BA/" class="card-tag">#ゲーム開発</a>
+              
+                <a href="/tags/%E4%B8%91%E4%B8%89%E3%81%A4%E3%81%AE%E9%96%93/" class="card-tag">#丑三つの間</a>
+              
+                <a href="/tags/%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F%E7%B3%BB/" class="card-tag">#作ってみた系</a>
+              
+            </div>
+          </div>
+        
+        <a href="/posts/game-dev/ushimitsu-no-ma/about-ushimitsu-no-ma/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+      </div>
+    </div>
+  </div>
+</article>
+
+        </div>
+      
+        <div class="w-100 mb4 relative">
+          
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l dark-gray no-underline">
+    <div class="flex-column flex-row-ns flex">
+      
+        <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns card-thumb">
           <a href="/posts/app-dev/gemshare/gemshare-lp/" class="db grow">
-            <img src="https://iwatanabe-7.com/images/gemshare/lp-img.png" class="img" alt="image from 【Claude】ClaudeでLPを爆速作成！GemShareのランディングページを公開しました">
+            <img src="https://iwatanabe-7.com/images/gemshare/lp-img.png" class="img" alt="image from 【Claude】ClaudeでLPを爆速作成！GemShareのランディングページを公開しました" style="object-position: center;">
           </a>
         </div>
       
@@ -168,15 +281,17 @@
         </div>
         
           <div class="card-tags">
-            
-              <a href="/tags/claude/" class="card-tag">#Claude</a>
-            
-              <a href="/tags/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/" class="card-tag">#アプリ開発</a>
-            
-              <a href="/tags/gemshare/" class="card-tag">#GemShare</a>
-            
-              <a href="/tags/%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F%E7%B3%BB/" class="card-tag">#作ってみた系</a>
-            
+            <div class="card-tags-track">
+              
+                <a href="/tags/claude/" class="card-tag">#Claude</a>
+              
+                <a href="/tags/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/" class="card-tag">#アプリ開発</a>
+              
+                <a href="/tags/gemshare/" class="card-tag">#GemShare</a>
+              
+                <a href="/tags/%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F%E7%B3%BB/" class="card-tag">#作ってみた系</a>
+              
+            </div>
           </div>
         
         <a href="/posts/app-dev/gemshare/gemshare-lp/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>

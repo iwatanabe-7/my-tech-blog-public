@@ -16,14 +16,83 @@
     
 
     
-<link rel="stylesheet" href="/ananke/css/main.min.f8083f2fb1788f3d42f1e3ac44a66434e02493606e6a16e15d28f90b5d096bb7.css" >
+<link rel="stylesheet" href="/ananke/css/main.min.cb7ffbae4ce2d233700a3797bfbc6738c58c726a8c286300f67bfa229e6f96de.css" >
 
 
 
   
 
 
+    <script>
+(function () {
+  var PIXELS_PER_SEC = 30;
+
+  function marquee(container) {
+    if (container.dataset.marqueeBound) return;
+
+    var track = container.querySelector(".card-tags-track");
+    if (!track) return;
+
+    var originalWidth = track.scrollWidth;
+    if (originalWidth <= container.clientWidth + 1) return;
+
+    container.dataset.marqueeBound = "1";
+
     
+    var originalChildren = [].slice.call(track.children);
+    originalChildren.forEach(function (child) {
+      var dup = child.cloneNode(true);
+      dup.setAttribute("aria-hidden", "true");
+      dup.setAttribute("tabindex", "-1");
+      track.appendChild(dup);
+    });
+
+    var gap = parseFloat(getComputedStyle(track).columnGap || getComputedStyle(track).gap || 0) || 0;
+    var loopWidth = originalWidth + gap;
+
+    var paused = false;
+    var offset = 0;
+    var last = null;
+
+    container.addEventListener("mouseenter", function () { paused = true; });
+    container.addEventListener("mouseleave", function () { paused = false; });
+    container.addEventListener("touchstart", function () { paused = true; }, { passive: true });
+    container.addEventListener("touchend", function () { paused = false; });
+
+    function step(ts) {
+      if (last === null) last = ts;
+      var dt = ts - last;
+      last = ts;
+
+      if (!paused) {
+        offset += (PIXELS_PER_SEC * dt) / 1000;
+        if (offset >= loopWidth) {
+          offset -= loopWidth;
+        }
+        track.style.transform = "translateX(" + -offset + "px)";
+      }
+
+      requestAnimationFrame(step);
+    }
+
+    requestAnimationFrame(step);
+  }
+
+  function init() {
+    if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      return;
+    }
+    document.querySelectorAll(".card-tags").forEach(marquee);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+  window.addEventListener("load", init);
+})();
+</script>
 
 
     

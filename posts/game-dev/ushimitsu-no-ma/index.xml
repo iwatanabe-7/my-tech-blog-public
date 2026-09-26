@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>丑三つの間 on Nabe Tech Blog</title>
+    <link>http://localhost:1313/posts/game-dev/ushimitsu-no-ma/</link>
+    <description>Recent content in 丑三つの間 on Nabe Tech Blog</description>
+    <generator>Hugo</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sat, 26 Sep 2026 18:00:15 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/game-dev/ushimitsu-no-ma/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【ゲーム開発】ブラウザで遊べる和風ホラー脱出ゲーム「丑三つの間」を作成しました。</title>
+      <link>http://localhost:1313/posts/game-dev/ushimitsu-no-ma/about-ushimitsu-no-ma/</link>
+      <pubDate>Sat, 26 Sep 2026 18:00:15 +0900</pubDate>
+      <guid>http://localhost:1313/posts/game-dev/ushimitsu-no-ma/about-ushimitsu-no-ma/</guid>
+      <description>Claude でブラウザゲーム「丑三つの間」を作成しました。</description>
+    </item>
+  </channel>
+</rss>

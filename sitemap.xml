@@ -2,6 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://iwatanabe-7.com/posts/game-dev/ushimitsu-no-ma/about-ushimitsu-no-ma/</loc>
+    <lastmod>2026-09-26T18:00:15+09:00</lastmod>
+  </url><url>
+    <loc>https://iwatanabe-7.com/categories/</loc>
+    <lastmod>2026-09-26T18:00:15+09:00</lastmod>
+  </url><url>
+    <loc>https://iwatanabe-7.com/tags/claude/</loc>
+    <lastmod>2026-09-26T18:00:15+09:00</lastmod>
+  </url><url>
+    <loc>https://iwatanabe-7.com/</loc>
+    <lastmod>2026-09-26T18:00:15+09:00</lastmod>
+  </url><url>
+    <loc>https://iwatanabe-7.com/posts/</loc>
+    <lastmod>2026-09-26T18:00:15+09:00</lastmod>
+  </url><url>
+    <loc>https://iwatanabe-7.com/tags/</loc>
+    <lastmod>2026-09-26T18:00:15+09:00</lastmod>
+  </url><url>
+    <loc>https://iwatanabe-7.com/categories/%E3%82%B2%E3%83%BC%E3%83%A0%E9%96%8B%E7%99%BA/</loc>
+    <lastmod>2026-09-26T18:00:15+09:00</lastmod>
+  </url><url>
+    <loc>https://iwatanabe-7.com/tags/%E3%82%B2%E3%83%BC%E3%83%A0%E9%96%8B%E7%99%BA/</loc>
+    <lastmod>2026-09-26T18:00:15+09:00</lastmod>
+  </url><url>
+    <loc>https://iwatanabe-7.com/tags/%E4%B8%91%E4%B8%89%E3%81%A4%E3%81%AE%E9%96%93/</loc>
+    <lastmod>2026-09-26T18:00:15+09:00</lastmod>
+  </url><url>
+    <loc>https://iwatanabe-7.com/tags/%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F%E7%B3%BB/</loc>
+    <lastmod>2026-09-26T18:00:15+09:00</lastmod>
+  </url><url>
     <loc>https://iwatanabe-7.com/posts/tech-blog/why-i-chose-hugo-over-wordpress/</loc>
     <lastmod>2026-09-22T20:05:22+09:00</lastmod>
   </url><url>
@@ -9,21 +39,6 @@
     <lastmod>2026-09-22T20:05:22+09:00</lastmod>
   </url><url>
     <loc>https://iwatanabe-7.com/posts/tech-blog/why-i-started-this-blog/</loc>
-    <lastmod>2026-09-22T20:05:22+09:00</lastmod>
-  </url><url>
-    <loc>https://iwatanabe-7.com/categories/</loc>
-    <lastmod>2026-09-22T20:05:22+09:00</lastmod>
-  </url><url>
-    <loc>https://iwatanabe-7.com/</loc>
-    <lastmod>2026-09-22T20:05:22+09:00</lastmod>
-  </url><url>
-    <loc>https://iwatanabe-7.com/posts/</loc>
-    <lastmod>2026-09-22T20:05:22+09:00</lastmod>
-  </url><url>
-    <loc>https://iwatanabe-7.com/tags/</loc>
-    <lastmod>2026-09-22T20:05:22+09:00</lastmod>
-  </url><url>
-    <loc>https://iwatanabe-7.com/tags/%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F%E7%B3%BB/</loc>
     <lastmod>2026-09-22T20:05:22+09:00</lastmod>
   </url><url>
     <loc>https://iwatanabe-7.com/categories/%E6%8A%80%E8%A1%93/</loc>
@@ -45,9 +60,6 @@
     <lastmod>2026-09-10T18:00:15+09:00</lastmod>
   </url><url>
     <loc>https://iwatanabe-7.com/posts/app-dev/gemshare/gemshare-lp/</loc>
-    <lastmod>2026-07-19T18:00:15+09:00</lastmod>
-  </url><url>
-    <loc>https://iwatanabe-7.com/tags/claude/</loc>
     <lastmod>2026-07-19T18:00:15+09:00</lastmod>
   </url><url>
     <loc>https://iwatanabe-7.com/tags/gemshare/</loc>

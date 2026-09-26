@@ -16,14 +16,83 @@
     
 
     
-<link rel="stylesheet" href="/ananke/css/main.min.f8083f2fb1788f3d42f1e3ac44a66434e02493606e6a16e15d28f90b5d096bb7.css" >
+<link rel="stylesheet" href="/ananke/css/main.min.cb7ffbae4ce2d233700a3797bfbc6738c58c726a8c286300f67bfa229e6f96de.css" >
 
 
 
   
 
 
+    <script>
+(function () {
+  var PIXELS_PER_SEC = 30;
+
+  function marquee(container) {
+    if (container.dataset.marqueeBound) return;
+
+    var track = container.querySelector(".card-tags-track");
+    if (!track) return;
+
+    var originalWidth = track.scrollWidth;
+    if (originalWidth <= container.clientWidth + 1) return;
+
+    container.dataset.marqueeBound = "1";
+
     
+    var originalChildren = [].slice.call(track.children);
+    originalChildren.forEach(function (child) {
+      var dup = child.cloneNode(true);
+      dup.setAttribute("aria-hidden", "true");
+      dup.setAttribute("tabindex", "-1");
+      track.appendChild(dup);
+    });
+
+    var gap = parseFloat(getComputedStyle(track).columnGap || getComputedStyle(track).gap || 0) || 0;
+    var loopWidth = originalWidth + gap;
+
+    var paused = false;
+    var offset = 0;
+    var last = null;
+
+    container.addEventListener("mouseenter", function () { paused = true; });
+    container.addEventListener("mouseleave", function () { paused = false; });
+    container.addEventListener("touchstart", function () { paused = true; }, { passive: true });
+    container.addEventListener("touchend", function () { paused = false; });
+
+    function step(ts) {
+      if (last === null) last = ts;
+      var dt = ts - last;
+      last = ts;
+
+      if (!paused) {
+        offset += (PIXELS_PER_SEC * dt) / 1000;
+        if (offset >= loopWidth) {
+          offset -= loopWidth;
+        }
+        track.style.transform = "translateX(" + -offset + "px)";
+      }
+
+      requestAnimationFrame(step);
+    }
+
+    requestAnimationFrame(step);
+  }
+
+  function init() {
+    if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      return;
+    }
+    document.querySelectorAll(".card-tags").forEach(marquee);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+  window.addEventListener("load", init);
+})();
+</script>
 
 
     
@@ -81,8 +150,11 @@
    
   
 
-  <header>
-    <div class="bg-black">
+  
+  
+  
+  <header class="cover bg-center" style="background-image: url('https://iwatanabe-7.com/images/icon/techblogtop.png');">
+    <div class="bg-black-60">
       <nav class="pv3 ph3 ph4-ns" role="navigation">
   <div class="flex-l center items-center justify-between">
     <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
@@ -128,6 +200,16 @@
   </div>
 </nav>
 
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+          <div class="f2 f1-l fw2 white-90 mb0 lh-title">自己紹介</div>
+          
+            <div class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
+              自己紹介
+            </div>
+          
+        
+      </div>
     </div>
   </header>
 
@@ -153,7 +235,8 @@
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f5 nested-links black pr4-l w-100"><h2 id="自己紹介">自己紹介</h2>
+    <div class="nested-copy-line-height lh-copy serif f5 nested-links black pr4-l w-100"><p><img src="/images/icon/techblogtop.png" alt="技術ブログのトップページ"></p>
+<h2 id="自己紹介">自己紹介</h2>
 <p>初めまして、都内のWeb系IT企業でエンジニアをしています。<br>
 2025年度の新卒で、主にバックエンドを開発しています。</p>
 <p>新卒でエンジニアになった理由は、情報系の学部に通っていたこともあり、<br>
@@ -189,21 +272,35 @@
       </div>
     </div>
 
-    <aside class="w-30-l mt6-l">
+    <aside class="w-100 mt5">
 
 
 
 
-  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
-    <p class="f5 b mb3">Related</p>
-    <ul class="pa0 list">
-	   
-	     <li  class="mb2">
-          <a href="/posts/skill/itpassport/">【合格体験記】学生が3週間でITパスポート試験に合格</a>
-        </li>
-	    
-    </ul>
-</div>
+  <div class="related-posts">
+    <p class="related-posts-title">おすすめ記事</p>
+    <div class="related-posts-grid">
+      
+        
+        <a href="/posts/skill/itpassport/" class="related-post-card">
+          <div class="related-post-thumb" style="background-image:url('https://iwatanabe-7.com/images/icon/itpassport.png');"></div>
+          <span class="related-post-title">【合格体験記】学生が3週間でITパスポート試験に合格</span>
+        </a>
+      
+        
+        <a href="/posts/tech-blog/why-i-chose-hugo-over-wordpress/" class="related-post-card">
+          <div class="related-post-thumb" style="background-image:url('https://iwatanabe-7.com/images/techblog/why-i-chose-hugo-over-wordpress.png');"></div>
+          <span class="related-post-title">【技術ブログ】WordPressではなくHugoを選んだ理由</span>
+        </a>
+      
+        
+        <a href="/posts/tech-blog/why-i-chose-a-domain-only-cost-setup/" class="related-post-card">
+          <div class="related-post-thumb" style="background-image:url('https://iwatanabe-7.com/images/icon/techblogtop.png');"></div>
+          <span class="related-post-title">【技術ブログ】なぜドメイン代だけの構成にしたのか</span>
+        </a>
+      
+    </div>
+  </div>
 
 </aside>
   </article>

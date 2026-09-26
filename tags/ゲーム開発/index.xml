@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ゲーム開発 on Nabe Tech Blog</title>
+    <link>https://iwatanabe-7.com/tags/%E3%82%B2%E3%83%BC%E3%83%A0%E9%96%8B%E7%99%BA/</link>
+    <description>Recent content in ゲーム開発 on Nabe Tech Blog</description>
+    <generator>Hugo</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sat, 26 Sep 2026 18:00:15 +0900</lastBuildDate>
+    <atom:link href="https://iwatanabe-7.com/tags/%E3%82%B2%E3%83%BC%E3%83%A0%E9%96%8B%E7%99%BA/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【ゲーム開発】ブラウザで遊べる和風ホラー脱出ゲーム「丑三つの間」を作成しました。</title>
+      <link>https://iwatanabe-7.com/posts/game-dev/ushimitsu-no-ma/about-ushimitsu-no-ma/</link>
+      <pubDate>Sat, 26 Sep 2026 18:00:15 +0900</pubDate>
+      <guid>https://iwatanabe-7.com/posts/game-dev/ushimitsu-no-ma/about-ushimitsu-no-ma/</guid>
+      <description>Claude でブラウザゲーム「丑三つの間」を作成しました。</description>
+    </item>
+  </channel>
+</rss>

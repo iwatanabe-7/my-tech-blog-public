@@ -6,8 +6,15 @@
     <description>Recent content in Categories on Nabe Tech Blog</description>
     <generator>Hugo</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Tue, 22 Sep 2026 20:05:22 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 26 Sep 2026 18:00:15 +0900</lastBuildDate>
     <atom:link href="https://iwatanabe-7.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ゲーム開発</title>
+      <link>https://iwatanabe-7.com/categories/%E3%82%B2%E3%83%BC%E3%83%A0%E9%96%8B%E7%99%BA/</link>
+      <pubDate>Sat, 26 Sep 2026 18:00:15 +0900</pubDate>
+      <guid>https://iwatanabe-7.com/categories/%E3%82%B2%E3%83%BC%E3%83%A0%E9%96%8B%E7%99%BA/</guid>
+      <description></description>
+    </item>
     <item>
       <title>技術</title>
       <link>https://iwatanabe-7.com/categories/%E6%8A%80%E8%A1%93/</link>
