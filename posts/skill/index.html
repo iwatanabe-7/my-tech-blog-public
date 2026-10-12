@@ -23,7 +23,76 @@
   
 
 
+    <script>
+(function () {
+  var PIXELS_PER_SEC = 30;
+
+  function marquee(container) {
+    if (container.dataset.marqueeBound) return;
+
+    var track = container.querySelector(".card-tags-track");
+    if (!track) return;
+
+    var originalWidth = track.scrollWidth;
+    if (originalWidth <= container.clientWidth + 1) return;
+
+    container.dataset.marqueeBound = "1";
+
     
+    var originalChildren = [].slice.call(track.children);
+    originalChildren.forEach(function (child) {
+      var dup = child.cloneNode(true);
+      dup.setAttribute("aria-hidden", "true");
+      dup.setAttribute("tabindex", "-1");
+      track.appendChild(dup);
+    });
+
+    var gap = parseFloat(getComputedStyle(track).columnGap || getComputedStyle(track).gap || 0) || 0;
+    var loopWidth = originalWidth + gap;
+
+    var paused = false;
+    var offset = 0;
+    var last = null;
+
+    container.addEventListener("mouseenter", function () { paused = true; });
+    container.addEventListener("mouseleave", function () { paused = false; });
+    container.addEventListener("touchstart", function () { paused = true; }, { passive: true });
+    container.addEventListener("touchend", function () { paused = false; });
+
+    function step(ts) {
+      if (last === null) last = ts;
+      var dt = ts - last;
+      last = ts;
+
+      if (!paused) {
+        offset += (PIXELS_PER_SEC * dt) / 1000;
+        if (offset >= loopWidth) {
+          offset -= loopWidth;
+        }
+        track.style.transform = "translateX(" + -offset + "px)";
+      }
+
+      requestAnimationFrame(step);
+    }
+
+    requestAnimationFrame(step);
+  }
+
+  function init() {
+    if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      return;
+    }
+    document.querySelectorAll(".card-tags").forEach(marquee);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+  window.addEventListener("load", init);
+})();
+</script>
 
 
     
@@ -151,9 +220,11 @@
         </div>
         
           <div class="card-tags">
-            
-              <a href="/tags/%E3%83%96%E3%83%AD%E3%82%B0/" class="card-tag">#ブログ</a>
-            
+            <div class="card-tags-track">
+              
+                <a href="/tags/%E3%83%96%E3%83%AD%E3%82%B0/" class="card-tag">#ブログ</a>
+              
+            </div>
           </div>
         
         <a href="/posts/skill/itpassport/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>

@@ -2,87 +2,111 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://iwatanabe-7.com/posts/game-dev/ushimitsu-no-ma/about-ushimitsu-no-ma/</loc>
+    <loc>http://localhost:1313/posts/game-dev/ushimitsu-no-ma/about-ushimitsu-no-ma/</loc>
     <lastmod>2026-09-26T18:00:15+09:00</lastmod>
   </url><url>
-    <loc>https://iwatanabe-7.com/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2026-09-26T18:00:15+09:00</lastmod>
   </url><url>
-    <loc>https://iwatanabe-7.com/tags/claude/</loc>
+    <loc>http://localhost:1313/tags/claude/</loc>
     <lastmod>2026-09-26T18:00:15+09:00</lastmod>
   </url><url>
-    <loc>https://iwatanabe-7.com/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2026-09-26T18:00:15+09:00</lastmod>
   </url><url>
-    <loc>https://iwatanabe-7.com/posts/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2026-09-26T18:00:15+09:00</lastmod>
   </url><url>
-    <loc>https://iwatanabe-7.com/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-09-26T18:00:15+09:00</lastmod>
   </url><url>
-    <loc>https://iwatanabe-7.com/categories/%E3%82%B2%E3%83%BC%E3%83%A0%E9%96%8B%E7%99%BA/</loc>
+    <loc>http://localhost:1313/categories/%E3%82%B2%E3%83%BC%E3%83%A0%E9%96%8B%E7%99%BA/</loc>
     <lastmod>2026-09-26T18:00:15+09:00</lastmod>
   </url><url>
-    <loc>https://iwatanabe-7.com/tags/%E3%82%B2%E3%83%BC%E3%83%A0%E9%96%8B%E7%99%BA/</loc>
+    <loc>http://localhost:1313/posts/game-dev/</loc>
     <lastmod>2026-09-26T18:00:15+09:00</lastmod>
   </url><url>
-    <loc>https://iwatanabe-7.com/tags/%E4%B8%91%E4%B8%89%E3%81%A4%E3%81%AE%E9%96%93/</loc>
+    <loc>http://localhost:1313/tags/%E3%82%B2%E3%83%BC%E3%83%A0%E9%96%8B%E7%99%BA/</loc>
     <lastmod>2026-09-26T18:00:15+09:00</lastmod>
   </url><url>
-    <loc>https://iwatanabe-7.com/tags/%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F%E7%B3%BB/</loc>
+    <loc>http://localhost:1313/posts/game-dev/ushimitsu-no-ma/</loc>
     <lastmod>2026-09-26T18:00:15+09:00</lastmod>
   </url><url>
-    <loc>https://iwatanabe-7.com/posts/tech-blog/why-i-chose-hugo-over-wordpress/</loc>
+    <loc>http://localhost:1313/tags/%E4%B8%91%E4%B8%89%E3%81%A4%E3%81%AE%E9%96%93/</loc>
+    <lastmod>2026-09-26T18:00:15+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F%E7%B3%BB/</loc>
+    <lastmod>2026-09-26T18:00:15+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/tech-blog/why-i-chose-hugo-over-wordpress/</loc>
     <lastmod>2026-09-22T20:05:22+09:00</lastmod>
   </url><url>
-    <loc>https://iwatanabe-7.com/posts/tech-blog/why-i-chose-a-domain-only-cost-setup/</loc>
+    <loc>http://localhost:1313/posts/tech-blog/why-i-chose-a-domain-only-cost-setup/</loc>
     <lastmod>2026-09-22T20:05:22+09:00</lastmod>
   </url><url>
-    <loc>https://iwatanabe-7.com/posts/tech-blog/why-i-started-this-blog/</loc>
+    <loc>http://localhost:1313/posts/tech-blog/why-i-started-this-blog/</loc>
     <lastmod>2026-09-22T20:05:22+09:00</lastmod>
   </url><url>
-    <loc>https://iwatanabe-7.com/categories/%E6%8A%80%E8%A1%93/</loc>
+    <loc>http://localhost:1313/categories/%E6%8A%80%E8%A1%93/</loc>
     <lastmod>2026-09-22T20:05:22+09:00</lastmod>
   </url><url>
-    <loc>https://iwatanabe-7.com/tags/%E6%8A%80%E8%A1%93%E3%83%96%E3%83%AD%E3%82%B0/</loc>
+    <loc>http://localhost:1313/posts/tech-blog/</loc>
     <lastmod>2026-09-22T20:05:22+09:00</lastmod>
   </url><url>
-    <loc>https://iwatanabe-7.com/posts/lifehack/line-one-tap-message/</loc>
+    <loc>http://localhost:1313/tags/%E6%8A%80%E8%A1%93%E3%83%96%E3%83%AD%E3%82%B0/</loc>
+    <lastmod>2026-09-22T20:05:22+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/lifehack/line-one-tap-message/</loc>
     <lastmod>2026-09-10T18:00:15+09:00</lastmod>
   </url><url>
-    <loc>https://iwatanabe-7.com/tags/line/</loc>
+    <loc>http://localhost:1313/tags/line/</loc>
     <lastmod>2026-09-10T18:00:15+09:00</lastmod>
   </url><url>
-    <loc>https://iwatanabe-7.com/categories/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/</loc>
+    <loc>http://localhost:1313/categories/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/</loc>
     <lastmod>2026-09-10T18:00:15+09:00</lastmod>
   </url><url>
-    <loc>https://iwatanabe-7.com/tags/%E8%87%AA%E5%8B%95%E5%8C%96/</loc>
+    <loc>http://localhost:1313/posts/lifehack/</loc>
     <lastmod>2026-09-10T18:00:15+09:00</lastmod>
   </url><url>
-    <loc>https://iwatanabe-7.com/posts/app-dev/gemshare/gemshare-lp/</loc>
+    <loc>http://localhost:1313/tags/%E8%87%AA%E5%8B%95%E5%8C%96/</loc>
+    <lastmod>2026-09-10T18:00:15+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/app-dev/gemshare/gemshare-lp/</loc>
     <lastmod>2026-07-19T18:00:15+09:00</lastmod>
   </url><url>
-    <loc>https://iwatanabe-7.com/tags/gemshare/</loc>
+    <loc>http://localhost:1313/posts/app-dev/gemshare/</loc>
     <lastmod>2026-07-19T18:00:15+09:00</lastmod>
   </url><url>
-    <loc>https://iwatanabe-7.com/tags/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/</loc>
+    <loc>http://localhost:1313/tags/gemshare/</loc>
     <lastmod>2026-07-19T18:00:15+09:00</lastmod>
   </url><url>
-    <loc>https://iwatanabe-7.com/sitemap/</loc>
+    <loc>http://localhost:1313/posts/app-dev/</loc>
+    <lastmod>2026-07-19T18:00:15+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/</loc>
+    <lastmod>2026-07-19T18:00:15+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/sitemap/</loc>
     <lastmod>2026-07-08T20:00:00+09:00</lastmod>
   </url><url>
-    <loc>https://iwatanabe-7.com/tags/%E3%83%96%E3%83%AD%E3%82%B0/</loc>
+    <loc>http://localhost:1313/tags/%E3%83%96%E3%83%AD%E3%82%B0/</loc>
     <lastmod>2026-07-07T20:58:15+09:00</lastmod>
   </url><url>
-    <loc>https://iwatanabe-7.com/posts/profile/my-first-post/</loc>
+    <loc>http://localhost:1313/posts/profile/</loc>
     <lastmod>2026-07-07T20:58:15+09:00</lastmod>
   </url><url>
-    <loc>https://iwatanabe-7.com/posts/tech-blog/about-my-tech-blog/</loc>
+    <loc>http://localhost:1313/posts/profile/my-first-post/</loc>
+    <lastmod>2026-07-07T20:58:15+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/tech-blog/about-my-tech-blog/</loc>
     <lastmod>2026-07-07T20:05:22+09:00</lastmod>
   </url><url>
-    <loc>https://iwatanabe-7.com/posts/skill/itpassport/</loc>
+    <loc>http://localhost:1313/posts/skill/itpassport/</loc>
     <lastmod>2025-11-03T17:16:56+09:00</lastmod>
   </url><url>
-    <loc>https://iwatanabe-7.com/series/</loc>
+    <loc>http://localhost:1313/posts/skill/</loc>
+    <lastmod>2025-11-03T17:16:56+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/series/</loc>
   </url>
 </urlset>
